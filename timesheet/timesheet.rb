@@ -11,7 +11,7 @@ require 'time'
 
 def clock_in()
     current_date = Date.today.strftime("%m-%d-%Y")
-    current_time = Time.now.strftime("%H:%M:%S")
+    current_time = Time.now.strftime("%H:%M:%S %p")
     print "Enter In Comment > "
     comment = gets.chomp
   
@@ -21,7 +21,7 @@ def clock_in()
   end
 
 def clock_out()
-    current_time = Time.now.strftime("%H:%M:%S")
+    current_time = Time.now.strftime("%H:%M:%S %p")
 
     print "Enter Out Comment > "
     comment = gets.chomp
@@ -47,7 +47,7 @@ def clock_out()
     end
   end
 
-def find_total_time()
+def find_total_time() #add "Total" colunm into single cell at bottom
   csv_data = CSV.read("timesheet.csv").transpose # transpose turns rows into columns
   total_column = csv_data[3] 
   p total_column.slice(1..) #ignore the header
@@ -55,6 +55,12 @@ end
 
 #I probly worked an hour on this before I went to lunch
 
-find_total_time
-# clock_in
-# clock_out
+#find_total_time
+puts "Clock in or out? i/o? > "
+option = gets.chomp.downcase
+if option == "i"
+    clock_in
+elsif option == "o"
+    clock_out
+end
+

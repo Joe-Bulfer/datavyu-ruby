@@ -1,3 +1,6 @@
 Date,Time In,Time Out,Total,In Comment,Out Comment
-2024-07-06,11:45:00,11:45:15,00:00:15,p,done
-07-06-2024,11:49:03,11:49:07,00:00:04,hi im in,by im out
+07-03-2024,08:02:00 AM,08:44:00 AM,,Learning ruby syntax, installed datavyu
+07-04-2024,07:52:00 AM,08:51:00 AM,,"Reading through datavyu docs. Started reading scripts, ",played around with some simple ruby code expanding directories and finding .opf files
+07-04-2024,03:02:00 PM,04:10:00 PM,,Configured VSCode., Had trouble loading Datavyu_API.rb
+07-05-2024,07:32:00 AM,09:10:00 AM,,"Since I don’t know how to run Datavyu_API.rb, I might start over on Windows or ask Todd… Going to wait until I can ask questions about Datavyu_API and going to practice basic ruby and manipulate CSV files in the meantime. ",Made a clock_in and clock_out function to automate me manually entering these in excel. Now I just have to calculate total time.
+07-07-2024,09:40:00 AM,11:38:48 AM,01:58:48,Still learning ruby by building timehseet program,"set up git repo to track changes, minor date formatting updates"
